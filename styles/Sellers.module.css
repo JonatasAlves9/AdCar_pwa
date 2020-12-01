@@ -1,0 +1,52 @@
+.container {
+  min-height: 100vh;
+}
+
+.title {
+  color: rgb(196, 65, 65);
+  margin-top: 1rem;
+  margin-left: 1.1rem;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.containerCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card{
+  width: 92%;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.titleCard{
+  color: rgb(196, 65, 65);
+  margin-top: 1rem;
+  margin-left: 1.0rem;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.infoCard{
+  color: rgb(196, 65, 65);
+  margin-top: 1rem;
+  margin-left: 1.0rem;
+  font-size: 13px;
+}
+
+.button{
+  float: right;
+  margin-right: 2rem ;
+  margin-top: 10px;
+  padding: 3px;
+  width: 50%;
+  margin-bottom:20px ;
+  border-radius: 25px;
+  border: 0;
+  background-color: rgb(14, 131, 57);
+  color: white;
+}

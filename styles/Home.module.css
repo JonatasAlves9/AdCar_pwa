@@ -1,0 +1,118 @@
+.container {
+  min-height: 100vh;
+}
+
+.img{
+  width: 200px;
+  height: 120px;
+}
+
+.card {
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  flex-basis: 45%;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.containerDestaques {
+  margin-bottom: 20px;
+  width: 100%;
+  display: inline-flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.titleDestaques {
+  margin-left: 0.8rem;
+  margin-top: 0.5rem;
+  font-size: 20px;
+  color: rgb(196, 65, 65);
+  font-weight: bold;
+}
+
+.titleNovidades {
+  margin-left: 0.8rem;
+  margin-top: 0.5rem;
+  font-size: 20px;
+  color: rgb(196, 65, 65);
+  font-weight: bold;
+}
+
+.cardConsultores {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.containerBanner {
+  margin-top: 1.2rem;
+  padding-top: 0.1rem;
+  background-color: #fff;
+}
+
+.cardWhite {
+  width: 95%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.cardLeft{
+  padding-left: 20px;
+  float: left;
+  width: 30%;
+  height: 100%;
+}
+
+.cardRight{
+  float: right;
+  width: 70%;
+  height: 100%;
+}
+
+.titleConsultores{
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-weight: bold;
+  color: rgb(196, 65, 65);
+}
+
+.textoConsultores{
+  color: rgb(196, 65, 65);
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.button{
+  float: right;
+  margin-right: 2rem ;
+  margin-top: 10px;
+  padding: 7px;
+  width: 60%;
+  margin-bottom:20px ;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgba(190, 30, 30);
+  color: white;
+}
+
+.logo{
+  background-image:url('../public/images/icon.png');
+  background-size: contain;
+  background-repeat: no-repeat; 
+  margin: 1rem;
+  width: 100%;
+  height: 70px;
+}
