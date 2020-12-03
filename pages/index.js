@@ -3,6 +3,8 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/menu/menu'
 import Link from 'next/link'
+import { Fab } from '@material-ui/core';
+import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
 
 import api from '../services/api'
 
@@ -61,26 +63,14 @@ export default function Home() {
 
           </div>
         </div>
-        <div className={styles.cardConsultores}>
-          <div className={styles.cardWhite}>
-            <div className={styles.cardLeft}>
-              <div className={styles.logo}>
-
-              </div>
-            </div>
-            <div className={styles.cardRight}>
-              <p className={styles.titleConsultores}>QUER NEGOCIAR?</p>
-              <p className={styles.textoConsultores}>Entre em contato com nossos vendedores!</p>
-              <Link
-              href={'/sellers'}>      
-              <input
-                className={styles.button}
-                type="submit"
-                value="Vendedores"
-              />
-              </Link>
-            </div>
-          </div>
+       
+        <div className={styles.fab}>
+          <Link
+            href={'/sellers'}>
+            <Fab color="secondary" aria-label="edit">
+              <AccessAlarm />
+            </Fab>
+          </Link>
         </div>
 
       </div>

@@ -8,9 +8,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
     "@react-navigation/drawer": "^5.11.2",
     "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
+    "material-ui": "^0.20.2",
     "next": "10.0.0",
     "next-pwa": "^3.1.5",
     "react": "17.0.1",

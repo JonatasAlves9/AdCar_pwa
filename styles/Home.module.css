@@ -68,6 +68,14 @@
   background-color: #fff;
 }
 
+.fab{
+  position: fixed;
+  z-index: 2000;
+  padding: 20px;
+  bottom:0;
+  right: 0;
+}
+
 .cardLeft{
   padding-left: 20px;
   float: left;
