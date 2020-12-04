@@ -4,7 +4,8 @@ import styles from '../styles/Home.module.css'
 import Navbar from '../components/menu/menu'
 import Link from 'next/link'
 import { Fab } from '@material-ui/core';
-import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
+import { Call } from '@material-ui/icons';
+import { Skeleton } from '@material-ui/lab';
 
 import api from '../services/api'
 
@@ -38,43 +39,88 @@ export default function Home() {
     </>
   )
 
-  return (
-    <div>
-      <Navbar />
+  if (cars !== undefined) {
 
-      <div className={styles.container}>
-        <Head>
-          <title>Home</title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
+    return (
 
-        <div className={styles.containerBanner}>
-          <p className={styles.titleDestaques}>Destaques</p>
+      <div>
+        <Navbar />
+        <div className={styles.container}>
+          <Head>
+            <title>Home</title>
+            <link rel="icon" href="/favicon.ico" />
+          </Head>
 
-          <div className={styles.containerDestaques}>
-            {carsCards}
+          <div className={styles.containerBanner}>
+            <p className={styles.titleDestaques}>Destaques</p>
+
+            <div className={styles.containerDestaques}>
+              {carsCards}
+            </div>
           </div>
-        </div>
-        <div className={styles.containerBanner}>
-          <p className={styles.titleNovidades}>Novidades</p>
+          <div className={styles.containerBanner}>
+            <p className={styles.titleNovidades}>Novidades</p>
 
-          <div className={styles.containerDestaques}>
-            {carsCards}
+            <div className={styles.containerDestaques}>
+              {carsCards}
 
+            </div>
           </div>
-        </div>
-       
-        <div className={styles.fab}>
-          <Link
-            href={'/sellers'}>
-            <Fab color="secondary" aria-label="edit">
-              <AccessAlarm />
-            </Fab>
-          </Link>
+
+          <div className={styles.fab}>
+            <Link
+              href={'/sellers'}>
+              <Fab aria-label="edit">
+                <Call />
+              </Fab>
+            </Link>
+          </div>
+
         </div>
 
       </div>
+    )
+  } else {
+    return (
 
-    </div>
-  )
+      <div>
+        <Navbar />
+        <div className={styles.container}>
+          <Head>
+            <title>Home</title>
+            <link rel="icon" href="/favicon.ico" />
+          </Head>
+
+          <div className={styles.containerBanner}>
+            <p className={styles.titleDestaques}>Destaques</p>
+
+            <div className={styles.containerDestaques}>
+            
+            <Skeleton animation="wave" variant="rect" width={500} height={118} />
+            </div>
+          </div>
+          <div className={styles.containerBanner}>
+            <p className={styles.titleNovidades}>Novidades</p>
+
+            <div className={styles.containerDestaques}>
+            <Skeleton animation="wave" variant="rect" width={500} height={118} />
+            </div>
+          </div>
+
+          <div className={styles.fab}>
+            <Link
+              href={'/sellers'}>
+              <Fab aria-label="edit">
+                <Call />
+              </Fab>
+            </Link>
+          </div>
+
+        </div>
+
+      </div>
+    )
+  }
+
+
 }
